@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/CrowdSurge/banner"
+	lol "github.com/kris-nova/lolgopher"
+)
 
 func main() {
-	fmt.Println("Hello, Go modules.")
+	w := lol.NewLolWriter()
+	w.Write([]byte(banner.PrintS("hello go modules")))
 }
